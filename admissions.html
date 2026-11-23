@@ -19,7 +19,7 @@ nav{display:flex;gap:20px;align-items:center;flex-wrap:wrap}nav>a{font-size:14px
 h1,h2,h3{font-family:Georgia,'Times New Roman',serif;line-height:1.2;color:var(--navy)}
 .page-hero{background:linear-gradient(90deg,#081f3ded,#081f3d99),url('assets/campus.jpg') center/cover;color:#fff;padding:70px 24px}.breadcrumb{color:#c6d3df;font-size:14px}.page-hero h1{color:#fff;font-size:48px;margin:8px 0}.page-hero p{margin:0;color:#edf3fa}
 section{padding:72px 24px}.section-head{margin-bottom:38px}.section-head h2{font-size:42px;margin:8px 0}.section-head p{color:var(--muted);max-width:680px}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step{min-height:230px;padding:28px;border:1px solid #dde4ec;background:#fff}.step-number{display:block;color:var(--gold);font:italic 38px Georgia,serif}.step h3{margin:12px 0}.step p{color:var(--muted);font-size:14px}
+.enrollment-section{background:#f6f9ff}.enrollment-section .section-head{text-align:center;margin:0 auto 82px}.enrollment-section .section-head h2{font-size:50px}.steps{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:34px}.steps::before{content:"";position:absolute;top:-43px;left:10%;right:10%;height:1px;background:#f2c94c}.step{position:relative;min-height:250px;padding:34px 24px 28px;text-align:center;border:1px solid #dde4ec;border-radius:18px;background:#fff}.step::before{content:"";position:absolute;top:-66px;left:50%;width:72px;height:72px;transform:translateX(-50%);border:1px solid #bfc8db;border-radius:50%;background:#fff}.step-number{position:absolute;top:-54px;left:50%;z-index:1;transform:translateX(-50%);color:var(--navy);font:700 16px Georgia,serif}.step-icon{width:74px;height:74px;margin:-8px auto 16px;display:grid;place-items:center;border:1px solid #dde4ec;border-radius:50%;color:var(--blue);background:#eef2f8;font-size:28px}.step h3{margin:12px 0;font-size:25px}.step p{margin:0;color:#687ba1;font-size:16px;line-height:1.8}
 .admission-types{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.admission-card{padding:30px;background:var(--cream);border-top:4px solid var(--gold)}.admission-card h3{font-size:25px}.admission-card ul{padding-left:18px}.admission-card li{margin:8px 0}
 .inquiry{background:var(--blue);color:#fff;text-align:center;padding:52px 24px}.inquiry h2{color:#fff}.inquiry p{color:#e2eae4}.btn{display:inline-block;padding:12px 21px;border-radius:4px;background:var(--gold);color:#17251e;font-weight:700;font-size:14px;border:0}
 footer{background:#081f3d;color:#dce5de;padding:55px 24px 20px}footer h2,footer h3{color:#fff}footer a{color:#f2c94c}.footer-grid{max-width:1120px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:35px}.copyright{max-width:1120px;margin:35px auto 0;padding-top:18px;border-top:1px solid #ffffff25;font-size:13px;color:#aebbb2}
@@ -34,13 +34,13 @@ footer{background:#081f3d;color:#dce5de;padding:55px 24px 20px}footer h2,footer 
 </div></header>
 <main>
 <section class="page-hero"><div class="container"><div class="breadcrumb">Home / Admissions</div><h1>Join the KCC Community</h1><p>Begin your journey in faith, learning, and service at Kabankalan Catholic College.</p></div></section>
-<section><div class="container">
-<div class="section-head"><div class="eyebrow">Admission Process</div><h2>How to Apply</h2><p>Follow these general steps. Requirements and schedules may vary by educational level.</p></div>
+<section class="enrollment-section"><div class="container">
+<div class="section-head"><h2>Four Steps to Enrollment</h2></div>
 <div class="steps">
-<article class="step"><span class="step-number">01</span><h3>Choose a Program</h3><p>Review the college, senior high, and basic education offerings available at KCC.</p></article>
-<article class="step"><span class="step-number">02</span><h3>Prepare Requirements</h3><p>Gather your academic records and other documents required for your selected level.</p></article>
-<article class="step"><span class="step-number">03</span><h3>Submit Application</h3><p>Visit the Registrar's Office or contact KCC to complete the application process.</p></article>
-<article class="step"><span class="step-number">04</span><h3>Confirm Enrollment</h3><p>Complete assessment, enrollment, and orientation requirements for the school term.</p></article>
+<article class="step"><span class="step-number">01</span><div class="step-icon" aria-hidden="true">▤</div><h3>Submit Requirements</h3><p>Prepare and submit your application form along with the required documents.</p></article>
+<article class="step"><span class="step-number">02</span><div class="step-icon" aria-hidden="true">✓</div><h3>Entrance Examination</h3><p>Take the entrance examination to assess your academic readiness.</p></article>
+<article class="step"><span class="step-number">03</span><div class="step-icon" aria-hidden="true">▣</div><h3>Interview</h3><p>Attend a brief interview with the admissions committee.</p></article>
+<article class="step"><span class="step-number">04</span><div class="step-icon" aria-hidden="true">→</div><h3>Enrollment</h3><p>Complete your enrollment and officially become a KCC student.</p></article>
 </div>
 </div></section>
 <section style="background:#f7f8fb"><div class="container">
