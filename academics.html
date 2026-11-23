@@ -17,9 +17,9 @@
     .academics-menu{position:relative}.academics-toggle{list-style:none;cursor:pointer;font-size:14px;font-weight:700;color:#a47726;display:flex;align-items:center;gap:6px}.academics-toggle::-webkit-details-marker{display:none}.academics-toggle::after{content:"⌄";font-size:16px}.academics-menu[open] .academics-toggle{color:#a47726}.academics-dropdown{position:absolute;top:calc(100% + 18px);left:50%;transform:translateX(-50%);width:310px;padding:12px;background:#151b25;border:1px solid #303847;border-radius:8px;box-shadow:0 16px 38px #0b142966}.academics-dropdown a{display:flex;align-items:flex-start;gap:14px;padding:14px 12px;border-radius:6px;color:#fff!important;text-decoration:none}.academics-dropdown a:hover{background:#202938}.menu-icon{width:42px;height:42px;flex:none;display:grid;place-items:center;border:1px solid #354052;border-radius:50%;color:#f2c94c;font-size:20px}.menu-copy strong{display:block;font:700 17px Georgia,'Times New Roman',serif;color:#fff}.menu-copy small{display:block;font-size:13px;color:#8e99aa}
     .container{max-width:1120px;margin:auto}.page-hero{background:linear-gradient(90deg,#081f3ded,#081f3da8),url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80') center/cover;color:#fff;padding:70px 24px}.page-hero h1{color:#fff;font-size:48px;margin:4px 0}.page-hero p{margin:0;color:#edf3fa}.breadcrumb{color:#c6d3c9;font-size:14px}
     section{padding:72px 24px}.soft{background:var(--cream)}h1,h2,h3{font-family:Georgia,'Times New Roman',serif;line-height:1.2;color:var(--navy)}.eyebrow{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.section-head{text-align:center;max-width:720px;margin:0 auto 38px}.section-head h2{font-size:clamp(30px,4vw,43px);margin:8px 0}.section-head p{color:var(--muted)}
-    .academic-list{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.academic-card{scroll-margin-top:110px;background:#fff;border:1px solid #e8e8e1;padding:28px;border-radius:7px;box-shadow:0 8px 24px #17251e0a}.academic-card h2{margin:12px 0}.academic-card p{color:var(--muted)}.academic-card ul{padding-left:20px}.tag{display:inline-block;background:#f2ead9;color:#72531d;padding:5px 10px;border-radius:20px;font-size:12px;font-weight:bold}.college-offerings{grid-column:1/-1}.college-offerings ul{columns:2;column-gap:38px}.supplemental{break-inside:avoid;margin-top:18px;list-style:none;font-weight:700}.supplemental span{display:block;margin-top:3px;font-weight:400;font-style:italic;color:var(--muted)}.btn{display:inline-block;padding:12px 21px;border-radius:4px;background:var(--gold);color:#17251e;font-weight:700;font-size:14px;border:0}.banner{background:var(--green);color:#fff;padding:52px 24px;text-align:center}.banner h2{color:#fff}.banner p{color:#e2eae4}
+    .academic-list{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.academic-card{scroll-margin-top:110px;background:#fff;border:1px solid #e8e8e1;padding:28px;border-radius:7px;box-shadow:0 8px 24px #17251e0a}.academic-card h2{margin:12px 0}.academic-card p{color:var(--muted)}.academic-card ul{padding-left:20px}.tag{display:inline-block;background:#f2ead9;color:#72531d;padding:5px 10px;border-radius:20px;font-size:12px;font-weight:bold}.college-offerings,.senior-high-offerings{grid-column:1/-1}.college-offerings ul,.senior-high-offerings ul{columns:2;column-gap:38px}.supplemental{break-inside:avoid;margin-top:18px;list-style:none;font-weight:700}.supplemental span{display:block;margin-top:3px;font-weight:400;font-style:italic;color:var(--muted)}.btn{display:inline-block;padding:12px 21px;border-radius:4px;background:var(--gold);color:#17251e;font-weight:700;font-size:14px;border:0}.banner{background:var(--green);color:#fff;padding:52px 24px;text-align:center}.banner h2{color:#fff}.banner p{color:#e2eae4}
     footer{background:#081f3d;color:#dce5de;padding:55px 24px 20px}footer h2,footer h3{color:#fff}footer a{color:#f2c94c}.footer-grid{max-width:1120px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:35px}.copyright{max-width:1120px;margin:35px auto 0;padding-top:18px;border-top:1px solid #ffffff25;font-size:13px;color:#aebbb2}
-    @media(max-width:800px){.nav{align-items:flex-start;flex-direction:column}nav{gap:12px}.academics-dropdown{position:static;transform:none;width:min(310px,90vw)}.academic-list,.footer-grid{grid-template-columns:1fr}.college-offerings ul{columns:1}.page-hero h1{font-size:38px}}
+    @media(max-width:800px){.nav{align-items:flex-start;flex-direction:column}nav{gap:12px}.academics-dropdown{position:static;transform:none;width:min(310px,90vw)}.academic-list,.footer-grid{grid-template-columns:1fr}.college-offerings ul,.senior-high-offerings ul{columns:1}.page-hero h1{font-size:38px}}
 </style>
 </head>
 <body>
@@ -63,7 +63,26 @@
   </ul>
   <a class="btn dark" href="course.html">View college programs</a>
 </article>
-<article class="academic-card" id="senior-high"><span class="tag">Senior High</span><h2>Senior High School</h2><p>Choose from academic, technical-vocational-livelihood, sports, or arts and design pathways.</p><ul><li><strong>Academic Track:</strong> STEM, ABM, HUMSS, GAS</li><li><strong>TVL Track:</strong> ICT, Home Economics, Industrial Arts, Agri-Fishery Arts</li><li>Sports Track</li><li>Arts and Design Track</li></ul><a class="btn dark" href="course.html#senior-high">View SHS tracks</a></article>
+<article class="academic-card senior-high-offerings" id="senior-high">
+  <span class="tag">Senior High</span>
+  <h2>Senior High School Tracks and Strands</h2>
+  <p>Choose from the following tracks and strands based on your interests and future goals.</p>
+  <ul>
+    <li>Academic Track</li>
+    <li>Science, Technology, Engineering, and Mathematics (STEM) Strand</li>
+    <li>Accountancy, Business, and Management (ABM) Strand</li>
+    <li>Humanities and Social Sciences (HUMSS) Strand</li>
+    <li>General Academic Strand (GAS)</li>
+    <li>Technical-Vocational-Livelihood (TVL) Track</li>
+    <li>Information and Communications Technology (ICT) Strand</li>
+    <li>Home Economics Strand</li>
+    <li>Industrial Arts Strand</li>
+    <li>Agri-Fishery Arts Strand</li>
+    <li>Sports Track</li>
+    <li>Arts and Design Track</li>
+  </ul>
+  <a class="btn dark" href="course.html#senior-high">View SHS tracks</a>
+</article>
 <article class="academic-card" id="basic-ed"><span class="tag">Basic Education</span><h2>Basic Education</h2><p>A strong foundation in faith, knowledge, character, and lifelong learning.</p><ul><li>Elementary</li><li>Junior High School</li></ul><a class="btn dark" href="contact.html">Ask about admission</a></article>
 </div></div></section>
 <section class="banner"><div class="container"><h2>Ready to Join KCC?</h2><p>Contact the college for current programs, requirements, and admission schedules.</p><a class="btn" href="contact.html">Inquire Now</a></div></section>
