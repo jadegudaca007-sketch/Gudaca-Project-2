@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="News and announcements from Kabankalan Catholic College.">
+<title>News | Kabankalan Catholic College</title>
+<style>
+:root{--navy:#081f3d;--blue:#123b70;--gold:#f2c94c;--cream:#dde7f2;--ink:#1d2a38;--muted:#66727f}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.65;background:#fff}
+a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
+.topbar{background:var(--navy);color:#edf3fa;padding:8px 6%;font-size:13px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 12px #00000012}
+.nav{max-width:1180px;margin:auto;padding:15px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--navy);font-weight:800;line-height:1.2}.crest{width:56px;height:56px;object-fit:contain}.brand small{display:block;font-size:10px;letter-spacing:1.3px;color:var(--muted);margin-top:5px}
+nav{display:flex;gap:20px;align-items:center;flex-wrap:wrap}nav>a{font-size:14px;font-weight:700;color:var(--ink)}nav>a.active,nav>a:hover{color:#a47726}
+.academics-menu{position:relative}.academics-toggle{list-style:none;cursor:pointer;font-size:14px;font-weight:700;color:var(--ink);display:flex;align-items:center;gap:6px}.academics-toggle::-webkit-details-marker{display:none}.academics-toggle::after{content:"⌄";font-size:16px}.academics-menu[open] .academics-toggle{color:#a47726}.academics-dropdown{position:absolute;top:calc(100% + 18px);left:50%;transform:translateX(-50%);width:310px;padding:12px;background:#151b25;border:1px solid #303847;border-radius:8px;box-shadow:0 16px 38px #0b142966}.academics-dropdown a{display:flex;align-items:flex-start;gap:14px;padding:14px 12px;border-radius:6px;color:#fff!important;text-decoration:none}.academics-dropdown a:hover{background:#202938}.menu-icon{width:42px;height:42px;flex:none;display:grid;place-items:center;border:1px solid #354052;border-radius:50%;color:#f2c94c;font-size:20px}.menu-copy strong{display:block;font:700 17px Georgia,'Times New Roman',serif;color:#fff}.menu-copy small{display:block;font-size:13px;color:#8e99aa}
+.container{max-width:1120px;margin:auto}.eyebrow{color:#b58a12;font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+h1,h2,h3{font-family:Georgia,'Times New Roman',serif;line-height:1.2;color:var(--navy)}
+.page-hero{background:linear-gradient(90deg,#081f3ded,#081f3d99),url('assets/campus.jpg') center/cover;color:#fff;padding:70px 24px}.breadcrumb{color:#c6d3df;font-size:14px}.page-hero h1{color:#fff;font-size:48px;margin:8px 0}.page-hero p{margin:0;color:#edf3fa}
+section{padding:72px 24px}.section-head{margin-bottom:38px}.section-head h2{font-size:42px;margin:8px 0}.section-head p{color:var(--muted);max-width:680px}
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.news-card{border:1px solid #e4e8ef;background:#fff}.news-card img{width:100%;height:220px;object-fit:cover;display:block}.news-copy{padding:24px}.news-date{color:#a47726;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1px}.news-card h3{font-size:24px;margin:9px 0}.news-card p{color:var(--muted);font-size:14px;margin:0}
+.announcement-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin:0 0 32px}.announcement-card{min-height:250px;padding:34px 36px;position:relative;border:1px solid #dde2eb;border-top:4px solid #aebde1;border-radius:14px;background:#fff}.announcement-card:last-child{border-top-color:var(--gold)}.announcement-head{display:flex;justify-content:space-between;align-items:center;gap:20px}.announcement-label{color:#a47726;font-size:13px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.announcement-label::before{content:"◇";margin-right:10px;color:var(--gold)}.announcement-date{color:#6f86c7;font-size:14px}.announcement-date::before{content:"▣";margin-right:8px}.announcement-icon{width:64px;height:64px;margin:28px 0 20px;display:grid;place-items:center;border:1px solid #dfe4ec;border-radius:50%;color:#123b70;font-size:28px}.announcement-card:last-child .announcement-icon{color:#a47726}.announcement-card h3{max-width:520px;font-size:29px;margin:0 0 18px}.announcement-card p{max-width:520px;color:var(--muted);font-size:16px}.announcement-card .read-more{display:inline-block;margin-top:12px;padding-top:20px;border-top:1px solid #b8c4d4;color:#123b70;font-size:14px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.announcement-card .read-more::after{content:" →";margin-left:8px}
+.featured{display:grid;grid-template-columns:1.15fr .85fr;background:var(--cream);margin-bottom:32px}.featured img{width:100%;height:380px;object-fit:cover}.featured-copy{padding:48px}.featured-copy h2{font-size:38px;margin:10px 0}.featured-copy p{color:var(--muted)}
+.btn{display:inline-block;padding:12px 21px;border-radius:4px;background:var(--gold);color:#17251e;font-weight:700;font-size:14px;border:0}.btn.dark{background:var(--blue);color:#fff}
+.banner{background:var(--blue);color:#fff;padding:52px 24px;text-align:center}.banner h2{color:#fff}.banner p{color:#e2eae4}
+footer{background:#081f3d;color:#dce5de;padding:55px 24px 20px}footer h2,footer h3{color:#fff}footer a{color:#f2c94c}.footer-grid{max-width:1120px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:35px}.copyright{max-width:1120px;margin:35px auto 0;padding-top:18px;border-top:1px solid #ffffff25;font-size:13px;color:#aebbb2}
+@media(max-width:800px){.nav{align-items:flex-start;flex-direction:column}nav{gap:12px}.page-hero h1{font-size:38px}.featured,.announcement-grid,.news-grid,.footer-grid{grid-template-columns:1fr}.announcement-card{padding:28px}.announcement-head{align-items:flex-start;flex-direction:column;gap:8px}.featured img{height:300px}.featured-copy{padding:32px}}
+</style>
+</head>
+<body>
+<div class="topbar"><span>Guanzon St., Brgy. 1, Kabankalan City, Negros Occidental</span><span>(032) 4712-479 &nbsp; | &nbsp; kcc_1927@yahoo.com</span></div>
+<header><div class="nav">
+<a class="brand" href="index.html"><img class="crest" src="assets/kcc-logo.png" alt="Kabankalan Catholic College seal"><span>KABANKALAN CATHOLIC COLLEGE<small>CATHOLIC EDUCATION · OUR IDENTITY, OUR MISSION</small></span></a>
+<nav aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><details class="academics-menu"><summary class="academics-toggle">Academics</summary><div class="academics-dropdown"><a href="academics.html#college"><span class="menu-icon">♙</span><span class="menu-copy"><strong>College Programs</strong><small>Degree programs &amp; courses</small></span></a><a href="academics.html#senior-high"><span class="menu-icon">▣</span><span class="menu-copy"><strong>Senior High School</strong><small>Academic &amp; TVL tracks</small></span></a><a href="academics.html#basic-ed"><span class="menu-icon">♜</span><span class="menu-copy"><strong>Basic Education</strong><small>Elementary &amp; Junior High</small></span></a></div></details><a href="events.html">Events</a><a class="active" href="news.html">News</a><a href="trainers.html">Trainers</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a></nav>
+</div></header>
+
+<main>
+<section class="page-hero"><div class="container"><div class="breadcrumb">Home / News</div><h1>KCC News &amp; Updates</h1><p>Announcements, achievements, and stories from the Kabankalan Catholic College community.</p></div></section>
+<section><div class="container">
+<div class="section-head"><div class="eyebrow">Latest News</div><h2>Stories from KCC</h2><p>Stay informed about activities and announcements across the college.</p></div>
+<div class="announcement-grid">
+<article class="announcement-card">
+<div class="announcement-head"><div class="announcement-label">Announcement</div><div class="announcement-date">December 2024</div></div>
+<div class="announcement-icon" aria-hidden="true">◁</div>
+<h3>KCC Announces Expanded Programs for College Department</h3>
+<p>Kabankalan Catholic College is excited to announce expanded course offerings in the College Department to meet the growing demand...</p>
+<a class="read-more" href="https://kcc.edu.ph/news/" target="_blank" rel="noopener">Read More</a>
+</article>
+<article class="announcement-card">
+<div class="announcement-head"><div class="announcement-label">Announcement</div><div class="announcement-date">April 15, 2025</div></div>
+<div class="announcement-icon" aria-hidden="true">⌖</div>
+<h3>Fr. Richard L. Lachica, MAEd Appointed as New KCC School President</h3>
+<p>Bishop Louie P. Galbines, SThD, DD, has appointed Rev. Fr. Richard L. Lachica, MAEd, as the new school president of Kabankalan Cathol...</p>
+<a class="read-more" href="https://kcc.edu.ph/news/new-school-president-2025" target="_blank" rel="noopener">Read More</a>
+</article>
+</div>
+<article class="featured"><img src="assets/kadicosca-1.webp" alt="Kadicosca Meet 2026"><div class="featured-copy"><div class="news-date">Campus News · 2026</div><h2>Kadicosca Meet 2026</h2><p>KCC students gather for the Kadicosca Meet to demonstrate teamwork, sportsmanship, and school spirit.</p><a class="btn dark" href="events.html">View Events</a></div></article>
+<div class="news-grid">
+<article class="news-card"><img src="assets/cmat-pinning.jpg" alt="CMAT Pinning ceremony"><div class="news-copy"><div class="news-date">Academic News · 2025</div><h3>CMAT Pinning</h3><p>A memorable milestone recognizing the dedication and readiness of future professionals.</p></div></article>
+<article class="news-card"><img src="assets/crim-reception-rites.webp" alt="Criminology Reception Rites"><div class="news-copy"><div class="news-date">Student Development</div><h3>Criminology Reception Rites</h3><p>An important campus activity centered on discipline, courage, and commitment to public service.</p></div></article>
+<article class="news-card"><img src="assets/campus.jpg" alt="Kabankalan Catholic College campus"><div class="news-copy"><div class="news-date">Community</div><h3>Life at KCC</h3><p>Discover the academic, spiritual, and community experiences that shape the KCC journey.</p></div></article>
+</div>
+</div></section>
+<section class="banner"><div class="container"><h2>Stay Connected with KCC</h2><p>Follow official announcements and campus updates.</p><a class="btn" href="contact.html">Contact the College</a></div></section>
+</main>
+<footer><div class="footer-grid">
+<div><h2>Kabankalan Catholic College, Inc.</h2><p>A Christ-centered learning community committed to academic excellence, faith formation, and service since 1927.</p><p><em>“Teach Ye All Nations” — Matthew 28:19</em></p></div>
+<div><h3>Quick Links</h3><p><a href="about.html">About KCC</a></p><p><a href="academics.html">Academics</a></p><p><a href="events.html">Campus Events</a></p><p><a href="news.html">News</a></p><p><a href="contact.html">Contact Us</a></p></div>
+<div><h3>Get in Touch</h3><p>Guanzon St., Brgy. 1<br>Kabankalan City, Negros Occidental</p><p>(032) 4712-479</p><p><a href="mailto:kcc_1927@yahoo.com">kcc_1927@yahoo.com</a></p><p>8:00 AM–12:00 NN<br>1:00–5:00 PM</p></div>
+</div><div class="copyright">© 2026 Kabankalan Catholic College, Inc. All rights reserved.</div></footer>
+</body>
+</html>
